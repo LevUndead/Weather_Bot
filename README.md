@@ -15,3 +15,4 @@
 Студент 3-го курса Колледжа электроники и приборостроения 
 ![Lev](https://sun9-19.userapi.com/impg/tI207Pcfqw-PCpk818VziRzZYLs4fVXMOVKrpw/hziuV0EDIDM.jpg?size=960x1280&quality=95&sign=4bb305229fdd2e59e6e9ae306b0d6f9b&type=album)
 **Васильев Лев Николаевич**
+**Да, это я!
