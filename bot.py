@@ -1,22 +1,21 @@
 import telebot, requests
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-file = open('api.txt', 'r')
+file = open('apitg.txt', 'r')
 teleg_tokens = ''
 for line in file.read():
     teleg_tokens += line
 TOKEN = teleg_tokens
 
 weather_api = ''
+file.close()
+file = open('apiweather.txt', 'r')
 for line in file.read():
     weather_api += line
 
 URL_WEATHER_API = 'https://api.openweathermap.org/data/2.5/weather'
 API_KEY = weather_api
 
-'''
-'5d0903d816f3a11158f056373ea03350'
-'''
 EMOJI_CODE = {200: '⛈',
               201: '⛈',
               202: '⛈',
