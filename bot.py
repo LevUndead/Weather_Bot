@@ -1,20 +1,15 @@
 import telebot, requests
+import os
+from dotenv import load_dotenv
 from telebot.types import ReplyKeyboardMarkup, KeyboardButton
 
-file = open('apitg.txt', 'r')
-teleg_tokens = ''
-for line in file.read():
-    teleg_tokens += line
-TOKEN = teleg_tokens
+# Загрузка переменных из .env файла
+load_dotenv()
 
-weather_api = ''
-file.close()
-file = open('apiweather.txt', 'r')
-for line in file.read():
-    weather_api += line
+TOKEN = os.environ.get('TELEGRAM_TOKEN')
+API_KEY = os.environ.get('WEATHER_API_KEY')
 
 URL_WEATHER_API = 'https://api.openweathermap.org/data/2.5/weather'
-API_KEY = weather_api
 
 EMOJI_CODE = {200: '⛈',
               201: '⛈',
